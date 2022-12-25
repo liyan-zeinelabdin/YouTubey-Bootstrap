@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "CairoFont";
+  src: url(../fonts/Cairo-Regular.ttf);
+}
+:root {
+  --main-color: #bf40bf;
+}
+body {
+  font-family: "CairoFont", Arial, sans-serif;
+}
+/* Links */
+a {
+  color: black;
+  text-decoration: none !important;
+}
+/* Buttons Setting */
+button {
+  background-color: transparent !important;
+  color: var(--main-color) !important;
+  border-color: var(--main-color) !important;
+}
+button:hover {
+  background-color: var(--main-color) !important;
+  color: white !important;
+}
+/* Top Menu */
+nav.navbar {
+  height: 72px;
+}
+/* Website Icon (Logo) */
+#top-menu .video-icon {
+  background-color: var(--main-color);
+  color: white;
+  border-radius: 15%;
+  margin-right: 5px;
+}
+/* Search Icon */
+.navbar .search-icon {
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  top: 15px;
+  left: 100px;
+  display: none;
+}
+.navbar .search-icon:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+.search-input {
+  position: fixed;
+  top: 72px;
+  border: none;
+  padding: 6px 23px;
+  height: 60px;
+  background-color: #efeeee;
+  display: none;
+  z-index: 1;
+}
+.search-input:focus {
+  background-color: #efeeee;
+}
+.container-fluid {
+  padding: 0 !important;
+  overflow: hidden;
+}
+@media (max-width: 1116px) {
+  .navbar .collapse .d-flex {
+    display: none !important;
+  }
+  .navbar .search-icon {
+    display: inline;
+  }
+}
+@media (min-width: 1117px) {
+  .search-input {
+    display: none !important;
+  }
+}
+/* Side Bar Button */
+#top-menu .fa-solid {
+  cursor: pointer;
+}
+/* Side Bar Menu */
+.sidebar {
+  position: fixed;
+  z-index: 4;
+  right: -17rem;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  overflow: hidden;
+  background-color: white;
+  padding-bottom: 60px;
+}
+.sidebar:hover {
+  overflow-y: scroll;
+}
+.sidebar .list-group-item {
+  width: 17rem;
+}
+.sidebar .purple {
+  color: var(--main-color);
+}
+.sidebar .list-group-item:hover {
+  background-color: var(--main-color);
+  color: white;
+}
+.sidebar .list-group-item:hover .purple {
+  color: var(--main-color);
+}
+#wrap.toggled .sidebar {
+  right: 0rem;
+}
+/* Side Bar Scroll */
+.sidebar::-webkit-scrollbar {
+  background-color: rgb(230, 230, 230);
+  width: 8px;
+}
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+  width: 8px;
+}
+.layer {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  z-index: 3;
+  display: none;
+}
+/* Buttons */
+.navbar .navbar-nav .nav-link:hover,
+.navbar .navbar-nav .active > .nav-link {
+  background-color: var(--main-color);
+  color: white;
+}
+.login {
+  color: var(--main-color);
+}
+.modal .modal-header .close:hover {
+  color: var(--main-color) !important;
+  background-color: transparent !important;
+}
+input.form-control:focus,
+button:focus {
+  box-shadow: none !important;
+}
+/* Card - Play and Time Setting */
+.card .card-icons {
+  position: relative;
+}
+time {
+  position: absolute;
+  bottom: 10px;
+  left: 7px;
+  background-color: black;
+  color: white;
+  padding: 0px 3px;
+}
+.card .fa-play {
+  position: absolute;
+  top: 43%;
+  right: 43%;
+  color: #2c3131c7;
+  display: none;
+}
+.card:hover .fa-play {
+  display: inline;
+}
+.card {
+  transition: transform 0.5s;
+}
+.card:hover {
+  transform: translateY(-0.9%);
+}
+.card .card-title {
+  height: 50px;
+  overflow: hidden;
+}

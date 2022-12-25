@@ -1,0 +1,56 @@
+:root {
+  --main-color: #bf40bf;
+}
+/* Filter Section */
+.search-filter-icon {
+  cursor: pointer;
+}
+.filter-columns {
+  display: none;
+}
+input:checked + span {
+  color: var(--main-color);
+}
+
+/* Cards Section */
+time {
+  bottom: 7px;
+  left: 29px;
+}
+.card .card-horizontal .card-body {
+  min-width: 0;
+}
+.card .card-horizontal .card-body p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Cards Images */
+@media (max-width: 767.5px) {
+  .card .card-top-image {
+    width: 100%;
+  }
+  .card .card-horizontal time {
+    left: 10px;
+  }
+  .card .card-horizontal .fa-play {
+    right: 48%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 991.5px) {
+  .card .card-horizontal .card-body .channel-img {
+    display: block;
+    margin-top: 10px;
+  }
+  .card .card-horizontal .card-body .channel-img > img {
+    margin-right: 0 !important;
+  }
+  h4 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+}

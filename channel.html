@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>قناة الأكاديمية | يوتيوبي</title>
+    <link rel="stylesheet" href="css\bootstrap.rtl.css">
+    <link rel="stylesheet" href="css\index.css">
+    <link rel="stylesheet" href="css\channel.css">
+</head>
+<body class="mt-5 bg-light">
+    <div class="layer"></div>
+    <div id="top-menu">
+        <div class="container-fluid">
+            <!-- Menu -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top p-3">
+                <i class="fa-solid fa-bars" id="toggler"></i>
+                <b>
+                    <a class="navbar-brand ms-3" href="index.html">
+                        يوتيوبي
+                        <span class="video-icon p-1">
+                            <i class="fas fa-play-circle"></i>
+                        </span>
+                    </a>
+                </b>
+                
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-lg-auto">
+                        <li class="nav-item first-list-element">
+                            <a class="nav-link me-3 ms-1 px-3" href="index.html">الفيديوهات المقترحة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-1 px-3" href="#">المرفوعة حديثًا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link ms-1 px-3" href="#">الفيديوهات الرائجة</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex my-2 my-lg-0">
+                    <input class="form-control me-sm-2" type="search" placeholder="Search">
+                    <button onclick="location.href='search.html';" class="btn btn-outline-success my-2 my-sm-0" type="submit">ابحث</button>
+                    </div>
+                </div>
+                <i class="fas fa-search me-5 search-icon"></i>
+                <a class="nav-link login ms-3" href="#" data-bs-toggle="modal" data-target="#loginModal">تسجيل الدخول</a>
+            </nav>
+
+            <!-- Search Section - of screen smaller than 1116px -->
+            <input type="search" class="form-control search-input" placeholder="ابحث عن ...">
+
+            <!-- Modal - Login Form -->
+            <div class="modal fade rtl" id="loginModal" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">تسجيل الدخول</h5>
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span>&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group">
+                                    <label for="email" class="col-form-label">البريد الإلكتروني:</label>
+                                    <input type="email" class="form-control" id="email">
+                                </div>
+                                <div class="form-group">
+                                    <label for="password" class="col-form-label">كلمة المرور:</label>
+                                    <input type="password" class="form-control" id="password">
+                                </div>
+                            </form>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="">نسيت كلمة المرور</a>
+                            <a href="" class="mx-auto">إنشاء حساب جديد</a>
+                            <button type="button" class="btn btn-primary">دخول</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Side bar Menu -->
+            <div class="row pt-4">
+                <div id="wrap">
+                    <div class="sidebar">
+                        <ul class="list-group list-group-flush ps-0">
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-house me-2 purple"></i>
+                                الصفحة الرئيسية
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-film me-2 purple"></i>
+                                الفيديوهات المقترحة
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-plus me-2 purple"></i>
+                                المرفوعة حديثًا
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-brands fa-hotjar me-2 purple"></i>
+                                الفيديوهات الرائجة
+                            </a>
+                            <a href="log.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-clock-rotate-left me-2 purple"></i>
+                                سجل المشاهدة
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-floppy-disk me-2 purple"></i>
+                                الفيديوهات المحفوظة
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-bell me-2 purple"></i>
+                                الاشتراكات
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-graduation-cap me-2 purple"></i>
+                                محتوى تعليمي
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-sliders me-2 purple"></i>
+                                الإعدادات
+                            </a>
+                            <a href="index.html" class="list-group-item list-group-item-action">
+                                <i class="fa-solid fa-circle-question me-2 purple"></i>
+                                المساعدة
+                            </a>
+                            <a href="https://academy.hsoub.com/courses/front-end-web-development/" class="list-group-item list-group-item-action">
+                                تطوير واجهات المستخدم<br>
+                                &copy;أكاديمية حسوب 2022  
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Page Body -->
+    <div class="channel-page ">
+        <div class="container-fluid p-0">
+
+            <!-- Banner Image -->
+            <div class="row">
+                <div class="banner position-relative">
+                    <img src="img\h-channel.jpg" alt="" class="img-fluid">
+                    <div class="social-media position-absolute bg-secondary p-1">
+                        <a href="#" title="أكاديمية حسوب" class="me-1">
+                            <img src="img/icons/hsoub.png" alt="">
+                            أكاديمية حسوب
+                        </a>
+                        <a href="#" title="تابعنا على تويتر" class="me-1">
+                            <img src="img/icons/twitter.png" alt="">
+                        </a>
+                        <a href="#" title="تابعنا على فيسبوك" class="me-1">
+                            <img src="img/icons/facebook.png" alt="">
+                        </a>
+                        <a href="#" title="شركة حسوب">
+                            <img src="img/icons/hsoub-web.png" alt="">
+                        </a>
+                    </div>
+                    <div class="follow position-absolute">
+                        <button class="btn btn-info">اشتراك 2356</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Menu -->
+            <div class="row">
+                <nav class="navbar navbar-expand navbar-light bg-light mx-auto w-100 px-0">
+                    <ul class="navbar-nav mx-auto ps-0">
+                        <li class="nav-item active me-2">
+                            <a class="nav-link" href="#">الصفحة الرئيسية</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">فيديوهاتي</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">قوائم التشغيل</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">القنوات</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">مناقشة</a>
+                        </li>
+                        <li class="nav-item me-2">
+                            <a class="nav-link" href="#">حول</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            
+            <!-- Vedio Section -->
+            <div class="video-section bg-white p-2 mt-3">
+                <div class="card border-0">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <video controls autoplay muted loop poster="img\poster.png" class="w-100">
+                                <track kind="captions" src="video/caption.vtt" srclang="ar" label="عربي" default>
+                                <source src="video/hsoub.webm" type="video/webm">
+                                <source src="video/hsoub.mp4" type="video/mp4">
+                                لا يدعم متصفحك العنصر <code>video</code>.
+                            </video>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-block">
+                                <a href="watch.html"><h4 class="card-title">كيف تستخدم أدوات المطوِّر DevTools في Chrome</h4></a>
+                                <p class="card-text">نتعرف في هذا الدرس على أدوات المطور DevTools التي يتيحها متصفح google chrome والتي تمكنك من تتبع مشاكل التنسيق CSS بفعالية،
+                                    واكتشاف أخطاء Javascript بسهولة، بالإضافة إلى أنها تقدم لك إضاءات ومعلومات حول أداء الموقع.
+                                </p>
+                                <small class="text-muted">
+                                    <i class="fas fa-film"></i> <span>1.2 مليون مشاهدة</span>
+                                    <i class="far fa-clock"></i> <span>قبل 12 أشهر</span>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Cards of Vedioes -->
+            <div class="lateset-download bg-light">
+                <div class="container">
+                    <h6 class="py-5">آخر الفيديوهات المرفوعة</h6>
+                    <div class="row">
+                        <!-- 1 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/restful.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">شرح فلسفة RESTful - تعلم كيف تبني واجهات REST برمجية</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 5 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 2 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/devtools.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">كيف تستخدم أدوات المطور في Chrome</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>1.2 مليون مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 12 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 3 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/database.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">شرح قواعد البيانات SQL بالأمثلة العلمية</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>8 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 12 شهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 4 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/app.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">دورة تطوير تطبيقات الجوال باستخدام أدوات الويب</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>25 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 6 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 5 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/ruby1.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">دورة تطوير تطبيقات الويب باستخدام لغة Ruby</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 10 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 6 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/php.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">دورة تطوير تطبيقات الويب باستخدام لغة PHP - اكاديمية حسوب</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>7 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 3 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 7 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/cordova.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">التطبيقات الهجينة والتطبيقات الأصلية</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل 3 أشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- 8 -->
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="card mb-4 p-1">
+                                <a href="watch.html">
+                                    <div class="card-icons">
+                                        <img src="img/thumbnail/ruby.jpg" class="card-img-top" alt="card image">
+                                        <time>9:20</time>
+                                        <i class="fas fa-play fa-2x"></i>
+                                    </div>
+                                    <div class="card-body p-0">
+                                        <p class="card-title">تعرف على لغة البرمجة Ruby</p>
+                                    </div>
+                                </a>
+                                <div class="card-footer">
+                                    <small class="text-muted">
+                                        <span class="d-block">
+                                            <i class="fas fa-film"></i> <span>3 آلاف مشاهدة</span>
+                                        </span>
+                                        <i class="far fa-clock"></i> <span>قبل تسعةأشهر</span>
+                                    </small>
+                                </div>
+                                <a href="channel.html" class="channel-img">
+                                    <img src="img/ch-logo.png" alt="channel image" class="rounded-circle my-2 ms-3" width="30px">
+                                    <span>أكاديمية حسوب</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/1f6b98b1f0.js" crossorigin="anonymous"></script>
+    <script src="js\jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js\bootstrap.js"></script>
+    <script src="js\index.js"></script>
+</body>
+</html>

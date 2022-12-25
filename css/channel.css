@@ -1,0 +1,35 @@
+:root {
+  --main-color: #bf40bf;
+}
+.channel-page .follow {
+  bottom: 15px;
+  right: 15px;
+}
+.channel-page .follow button {
+  color: white !important;
+  background-color: var(--main-color) !important;
+  margin-right: 15px;
+}
+.channel-page .social-media {
+  margin-left: 15px;
+  bottom: 15px;
+  left: 15px;
+}
+.channel-page .video-section .card:hover {
+  transform: translateY(0%);
+}
+time {
+  font-size: 13px;
+}
+/* Second Menu */
+@media (max-width: 594px) {
+  .row .navbar-nav .nav-item .nav-link {
+    font-size: 13px;
+    padding-right: 4px !important;
+    padding-left: 4px !important;
+  }
+  .row .navbar-nav .nav-item {
+    margin-right: 1.5px !important;
+    margin-left: 1.5px !important;
+  }
+}
